@@ -40,6 +40,7 @@ ul {
 	font-size: 16px;
 	color: #fff;
 	position: relative;
+	z-index: 9999;
 }
 .logo{
 	float: left;
@@ -64,11 +65,32 @@ ul {
 .slicknav_menu {
 	display:none;
 }
+.arrow{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border-top: 3px white solid;
+	border-right: 3px white solid;
+	transform: rotate(45deg);
+	position: absolute;
+
+}
+.arrow-link{
+	top: 45%;
+	left: 45%;
+}
+.arrow-inner-block{
+    left: 55%;
+    top: 66%;
+}
+
+
 /* HEADER END */
 /* MAIN START */
 .inner-block{
 	background: #16b1c4;
     height: 580px;
+    position: relative;
 }
 .inner-block h3{
 	color: white;
@@ -103,6 +125,7 @@ ul {
 	width: 30%;
 	height: 221px;
 	background: violet;
+	position: relative;
 }
 /* MAIN END  */
 /* FOOTER START */
@@ -146,7 +169,10 @@ ul {
 	.link{
 		height: 162px;
 	}
-
+ .arrow-inner-block{
+    left: 76%;
+    top: 66%;
+}
 }
 @media (max-width: 767px){
     .container{
@@ -165,8 +191,10 @@ ul {
 
 }
    .header-nav{
-   	display: none;
+   	  display: none;
    }
+   .arrow-inner-block{
+      left: 91%;
 }
 @media (max-width: 639px){
 	.inner-block{
@@ -204,6 +232,17 @@ ul {
     }
     .text-block.w50+ .text-block.w50{
     	padding-left: 0px;
+    }
+    .arrow-link{
+    	width: 10px;
+    	height: 10px;
+    }
+
+    .arrow-inner-block{
+    	top: 64%;
+    	left: 81%;
+    	width: 13px;
+    	height: 13px;
     }
     
 
